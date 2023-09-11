@@ -1,7 +1,7 @@
 const API_URL = "https://restcountries.com/v3.1/all";
 
 // Define the getStatus() whose task is: 1. get request to the URL and 2. Pass this data to a function that will display it.
-async function loadCountryAPI(country) {
+async function loadCountryAPI() {
     const queryString = `${API_URL}`;
     const response = await fetch(queryString);
     const data = await response.json();
@@ -22,7 +22,7 @@ const displayCountries = countries => {
 
 // get data and set it to html
 const getCountry = (country) => {
-    //console.log(country);
+    console.log(country);
     return `
     <div class="country-div">
     <img src="${country.flags.png}">
