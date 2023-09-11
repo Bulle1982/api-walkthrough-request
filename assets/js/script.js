@@ -22,7 +22,7 @@ const displayCountries = countries => {
 
 // get data and set it to html
 const getCountry = (country) => {
-    console.log(country);
+    //console.log(country);
     return `
     <div class="country-div">
     <img src="${country.flags.png}">
