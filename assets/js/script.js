@@ -12,6 +12,8 @@ async function loadCountryAPI() {
     }
 } 
 
+
+
 const displayCountries = countries => {
     // console.log(countries);
     const countriesHTML = countries.map(country => getCountry(country))
@@ -22,7 +24,7 @@ const displayCountries = countries => {
 
 // get data and set it to html
 const getCountry = (country) => {
-    console.log(country);
+    //console.log(country);
     return `
     <div class="country-div">
     <img src="${country.flags.png}">
